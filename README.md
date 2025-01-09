@@ -14,19 +14,19 @@
 
 ## setup_chrome_driver
 瀏覽器的無頭模式，讓 Chrome 在背景運行而不需要開啟實際的瀏覽器視窗
-### chrome_options = Options()
+### 1. chrome_options = Options()
 設定Chrome 的啟動參數
-#### 1headless:
+#### 1. headless:
 ##### 無頭模式
-#### 2no-sandbox
+#### 2. no-sandbox
 ##### 不使用沙河模式
-#### 3disable-dev-shm-usage
+#### 3. disable-dev-shm-usage
 ##### 避免記憶體空間不足問題
-#### 4disable-gpu
+#### 4. disable-gpu
 ##### 禁止使用GPU加速
-#### 5disable-software-rasterizer
+#### 5. disable-software-rasterizer
 ##### 禁用軟體光柵化器
-### 6service = Service(ChromeDriverManager().install())
+### 2. service = Service(ChromeDriverManager().install())
 下載適合目前環境的webdriver
 ## extract_final_url_從 Google News 的 URL 中提取最終的 URL
 
